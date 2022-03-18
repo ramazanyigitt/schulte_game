@@ -10,4 +10,12 @@
     ● Memory
 
 Example video:
-<video src='https://youtu.be/UPbuJ6TimUI' width=180>
+html {
+background: #2D2D2D;
+}
+<a href="https://youtu.be/UPbuJ6TimUI" title="Schulte Game Video Demo">
+
+  <p align="center">
+    <img width="75%" src="https://img.youtube.com/vi/UPbuJ6TimUI/maxresdefault.jpg" alt="Schulte Game Video Demo"/>
+  </p>
+</a>
