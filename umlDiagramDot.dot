@@ -1,0 +1,18 @@
+strict digraph {
+
+  "sayi_oyunu/main.dartNumberGame" -> "flutter/src/widgets/framework.dartStatelessWidget"
+  "sayi_oyunu/ui/views/GameMenu.dartGameMenu" -> "flutter/src/widgets/framework.dartStatefulWidget"
+  "sayi_oyunu/ui/views/GameMenu.dart_GameMenuState" -> "flutter/src/widgets/framework.dartState"
+  "sayi_oyunu/ui/views/GameMenu.dart_GameMenuState" -> "flutter/src/widgets/automatic_keep_alive.dartAutomaticKeepAliveClientMixin"
+  "sayi_oyunu/ui/views/MainMenu.dartMainMenu" -> "flutter/src/widgets/framework.dartStatelessWidget"
+  "sayi_oyunu/ui/widgets/CategorySelector.dartCategorySelector" -> "flutter/src/widgets/framework.dartStatefulWidget"
+  "sayi_oyunu/ui/widgets/CategorySelector.dart_CategorySelectorState" -> "flutter/src/widgets/framework.dartState"
+  "sayi_oyunu/ui/widgets/GameOver.dartGameOver" -> "flutter/src/widgets/framework.dartStatelessWidget"
+  "sayi_oyunu/ui/widgets/NumberButton.dartNumberButton" -> "flutter/src/widgets/framework.dartStatefulWidget"
+  "sayi_oyunu/ui/widgets/NumberButton.dart_NumberButtonState" -> "flutter/src/widgets/framework.dartState"
+  "sayi_oyunu/ui/widgets/NumberButton.dartReactionNumber" -> "flutter/src/widgets/framework.dartStatelessWidget"
+  "sayi_oyunu/ui/widgets/NumberButton.dartMemoryNumber" -> "flutter/src/widgets/framework.dartStatelessWidget"
+  "sayi_oyunu/ui/widgets/ScoreTimer.dartScoreTimer" -> "flutter/src/widgets/framework.dartStatefulWidget"
+  "sayi_oyunu/ui/widgets/ScoreTimer.dart_ScoreTimerState" -> "flutter/src/widgets/framework.dartState"
+
+}

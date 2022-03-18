@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+	  "dart.flutterSdkPath": "C:/src/flutter_dev"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "CengelGame",
+				"request": "launch",
+				"type": "dart"
+			}
+		]
+	}
+}
