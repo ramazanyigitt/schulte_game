@@ -1,6 +1,6 @@
 ## Schulte Game
 
-#Game Types
+# Game Types
 
     ● ClassicOriginal
     ● ClassicOriginalReverse
