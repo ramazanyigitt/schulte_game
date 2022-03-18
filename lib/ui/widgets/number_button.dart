@@ -3,10 +3,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sayi_oyunu/main.dart';
-import 'package:sayi_oyunu/services/GameService.dart';
-import 'package:sayi_oyunu/services/NumberService.dart';
-import 'package:sayi_oyunu/ui/widgets/GameOver.dart';
+import '../../main.dart';
+import '../../services/game_service.dart';
+import '../../services/number_service.dart';
+import 'game_over_box.dart';
 
 class NumberButton extends StatefulWidget {
   final int number;
@@ -39,7 +39,6 @@ class _NumberButtonState extends State<NumberButton> {
     inReaction = false;
     centerY = 1.sh - 0.30.sh;
     centerX = 0.30.sw;
-    print("Center x: $centerX and Center Y: $centerY");
     if (widget.gameType == GameType.Memory) {
       showMemory = ValueNotifier(3 * secondToMil);
       memoryTimer();
@@ -69,18 +68,15 @@ class _NumberButtonState extends State<NumberButton> {
         Offset position = box.localToGlobal(Offset.zero);
         x = position.dx;
         y = position.dy;
-        print("Current x: $x and Current Y: $y");
 
         x = centerX - x + (x / 4);
 
         y = centerY - y + (y / 4);
-        print("After x: $x and Current Y: $y");
       }
       setState(() {
         selected = true;
       });
       if (widget.numberService.selectedNumbers.value.length == 26) {
-        print("Oyun bitti");
         Navigator.pop(
           navigatorKey.currentState.overlay.context,
         );
@@ -88,7 +84,7 @@ class _NumberButtonState extends State<NumberButton> {
           context: navigatorKey.currentState.overlay.context,
           useRootNavigator: false,
           barrierDismissible: true,
-          builder: (context) => GameOver(
+          builder: (context) => GameOverBox(
             numberService: widget.numberService,
           ),
         );

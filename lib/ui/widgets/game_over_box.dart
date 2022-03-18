@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sayi_oyunu/utils/TimeConverter.dart';
+import '../../utils/time_converter.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../main.dart';
 
-class GameOver extends StatelessWidget {
+class GameOverBox extends StatelessWidget {
   final numberService;
-  GameOver({
+  GameOverBox({
     @required this.numberService,
   });
 

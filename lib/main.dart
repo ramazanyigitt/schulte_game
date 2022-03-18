@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'ui/views/MainMenu.dart';
+import 'ui/views/main_menu.dart';
 
 void main() {
   runApp(NumberGame());

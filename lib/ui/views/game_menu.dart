@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sayi_oyunu/main.dart';
-import 'package:sayi_oyunu/services/GameService.dart';
-import 'package:sayi_oyunu/services/NumberService.dart';
-import 'package:sayi_oyunu/ui/widgets/NumberButton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sayi_oyunu/ui/widgets/ScoreTimer.dart';
+import '../widgets/score_timer_box.dart';
+
+import '../../main.dart';
+import '../../services/game_service.dart';
+import '../../services/number_service.dart';
+import '../widgets/number_button.dart';
 
 class GameMenu extends StatefulWidget {
   final GameType gameType;
@@ -26,7 +27,7 @@ class _GameMenuState extends State<GameMenu>
   @override
   void initState() {
     numberService = new NumberService()..createRandomNumbers();
-    numberService.time_ago = [
+    numberService.timeAgo = [
       DateTime.now(),
     ];
     if (widget.gameType == GameType.ClassicLightReverse ||
@@ -34,7 +35,6 @@ class _GameMenuState extends State<GameMenu>
       numberService.selectedNumbers = ValueNotifier([26]);
     else
       numberService.selectedNumbers = ValueNotifier([0]);
-    //for (int i = 0; i < 24; i++) numberService.selectedNumbers.add(i);
     super.initState();
   }
 
@@ -65,7 +65,7 @@ class _GameMenuState extends State<GameMenu>
               SizedBox(
                 width: 25.w,
               ),
-              ScoreTimer(
+              ScoreTimerBox(
                 numberService: numberService,
               ),
             ],

@@ -1,10 +1,11 @@
 import 'package:flutter/foundation.dart';
-import 'GameService.dart';
+
+import 'game_service.dart';
 
 class NumberService {
   List<int> randomNumbers;
   ValueNotifier<List<int>> selectedNumbers;
-  List<DateTime> time_ago;
+  List<DateTime> timeAgo;
 
   List<int> createRandomNumbers() {
     randomNumbers = [];

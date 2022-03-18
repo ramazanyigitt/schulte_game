@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sayi_oyunu/main.dart';
+import '../../main.dart';
 
-class CategorySelector extends StatefulWidget {
+class CategorySelectorButton extends StatefulWidget {
   final Widget routeChild;
   final String categoryName;
 
-  const CategorySelector({
+  const CategorySelectorButton({
     @required this.categoryName,
     @required this.routeChild,
   });
 
   @override
-  _CategorySelectorState createState() => _CategorySelectorState();
+  _CategorySelectorButtonState createState() => _CategorySelectorButtonState();
 }
 
-class _CategorySelectorState extends State<CategorySelector> {
+class _CategorySelectorButtonState extends State<CategorySelectorButton> {
   bool hover;
 
   @override

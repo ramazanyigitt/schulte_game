@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sayi_oyunu/services/GameService.dart';
-import 'package:sayi_oyunu/ui/views/GameMenu.dart';
-import 'package:sayi_oyunu/ui/widgets/CategorySelector.dart';
+import '../../services/game_service.dart';
+import 'game_menu.dart';
+import '../widgets/category_selector_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainMenu extends StatelessWidget {
@@ -21,19 +21,19 @@ class MainMenu extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Classic Original",
                   routeChild: GameMenu(
                     gameType: GameType.ClassicOriginal,
                   ),
                 ),
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Classic Original Reverse",
                   routeChild: GameMenu(
                     gameType: GameType.ClassicOriginalReverse,
                   ),
                 ),
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Classic Light",
                   routeChild: GameMenu(
                     gameType: GameType.ClassicLight,
@@ -47,19 +47,19 @@ class MainMenu extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Classic Light Reverse",
                   routeChild: GameMenu(
                     gameType: GameType.ClassicLightReverse,
                   ),
                 ),
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Reaction",
                   routeChild: GameMenu(
                     gameType: GameType.Reaction,
                   ),
                 ),
-                CategorySelector(
+                CategorySelectorButton(
                   categoryName: "Memory",
                   routeChild: GameMenu(
                     gameType: GameType.Memory,

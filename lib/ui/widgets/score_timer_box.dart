@@ -1,20 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sayi_oyunu/services/NumberService.dart';
-import 'package:sayi_oyunu/utils/TimeConverter.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ScoreTimer extends StatefulWidget {
+import '../../services/number_service.dart';
+import '../../utils/time_converter.dart';
+
+class ScoreTimerBox extends StatefulWidget {
   final NumberService numberService;
-  const ScoreTimer({
+  const ScoreTimerBox({
     @required this.numberService,
   });
 
   @override
-  _ScoreTimerState createState() => _ScoreTimerState();
+  _ScoreTimerBoxState createState() => _ScoreTimerBoxState();
 }
 
-class _ScoreTimerState extends State<ScoreTimer> {
+class _ScoreTimerBoxState extends State<ScoreTimerBox> {
   @override
   initState() {
     super.initState();
@@ -32,7 +33,7 @@ class _ScoreTimerState extends State<ScoreTimer> {
     return Container(
       child: Center(
         child: Text(
-          "Score: ${timeConverter(time_ago: DateTime.now().difference(widget.numberService.time_ago[0]).inSeconds)}",
+          "Score: ${timeConverter(time_ago: DateTime.now().difference(widget.numberService.timeAgo[0]).inSeconds)}",
           style: TextStyle(
             color: Colors.white,
             fontSize: 9.sp,
