@@ -10,9 +10,7 @@
     ● Memory
 
 Example video:
-html {
-background: #2D2D2D;
-}
+
 <a href="https://youtu.be/UPbuJ6TimUI" title="Schulte Game Video Demo">
 
   <p align="center">
