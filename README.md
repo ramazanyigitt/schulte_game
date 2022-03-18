@@ -1,6 +1,6 @@
-## Schulte Game
+# Schulte Game
 
-# Game Types
+## Game Types
 
     ● ClassicOriginal
     ● ClassicOriginalReverse
@@ -10,4 +10,4 @@
     ● Memory
 
 Example video:
-<video src='your URL here' width=180>
+<video src='https://youtu.be/UPbuJ6TimUI' width=180>
